@@ -1,4 +1,8 @@
 [[redirects]]
-  from = "/static/*"
-  to = "/static/:splat"
+  from = "/*"
+  to = "/index.html"
   status = 200
+
+[build]
+  publish = "dist"
+  command = "npm run build"
